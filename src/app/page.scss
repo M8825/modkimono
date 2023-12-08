@@ -1,0 +1,32 @@
+@keyframes glowing-border-third {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
+.foo {
+  position: relative;
+  box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .145),
+              0px 2px 2px rgba(0, 0, 0, .52),
+              0px 8px 8px -8px rgba(0, 0, 0, 1.16);
+}
+
+.foo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  box-shadow: 0 0 10px rgba(232, 196, 122, 0.4);
+}
+
+
+.foo::after {
+  animation: glowing-border-third 4s ease-in-out forwards;
+}
