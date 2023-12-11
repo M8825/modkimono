@@ -37,10 +37,10 @@ export default function WaitList() {
       />
       <div className="flex flex-col gap-3">
         <div className="w-500 flex flex-col gap-1">
-          <p className="text-mk-color-light-gray font-open-sans">
+          <p className="text-lgray font-open-sans">
             It`s on the way
           </p>
-          <p className="text-mk-color-dark-gray font-open-sans text-xs">
+          <p className="text-dgray font-open-sans text-xs">
             Sign up to be the first to know when it launches.
           </p>
         </div>
@@ -50,14 +50,14 @@ export default function WaitList() {
         >
           <input
             type="email"
-            className=" w-full ph-zinc-700 rounded-tl-md rounded-bl-md p-4 bg-neutral-900 focus:outline-none placeholder:select-none"
+            className="w-9/12	 rounded-tl-md rounded-bl-md p-4 bg-neutral-900 focus:outline-none placeholder:select-none placeholder-neutral-700"
             placeholder="email"
             onChange={(e) => setEmailValue(e.target.value)}
             value={emailValue}
           />
           <button
             type="submit"
-            className="bg-zinc-800 rounded-tr-md rounded-br-md p-4 text-dgray hover:text-lgray font-open-sans text-xs disabled:bg-zinc-800 disabled:hover:bg-zinc-800 disabled:text-dgray disabled:opacity-50 select-none"
+            className="w-3/12	 bg-zinc-800 rounded-tr-md rounded-br-md p-4 text-dgray hover:text-lgray font-open-sans text-xs disabled:bg-zinc-800 disabled:hover:bg-zinc-800 disabled:text-dgray disabled:opacity-50 select-none"
             disabled={!validateEmail(emailValue)}
           >
             Submit
