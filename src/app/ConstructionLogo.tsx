@@ -1,5 +1,4 @@
 import "./ConstructionLogo.scss";
-import { motion } from "framer-motion"
 
 export default function ConstructionLogo() {
 	return (
