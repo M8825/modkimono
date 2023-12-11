@@ -31,6 +31,7 @@ export default function WaitList() {
             boxShadow:
               "0 0 0 1px hsla(0, 0%, 100%, .145), 0px 2px 2px rgba(0, 0, 0, .52), 0px 8px 8px -8px rgba(0, 0, 0, 1.16)",
             backgroundColor: "rgb(23 23 23)",
+            userSelect: "none",
           },
         }}
       />
