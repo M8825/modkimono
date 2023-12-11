@@ -2,7 +2,7 @@ import "./ConstructionLogo.scss";
 
 export default function ConstructionLogo() {
   return (
-    <div className="flex justify-center items-center foo w-500 h-400 rounded-2xl p-10">
+    <div className="foo flex justify-center items-center w-500 h-400 rounded-2xl p-10">
       <svg
         id="Layer_2"
         data-name="Layer 2"

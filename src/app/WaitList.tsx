@@ -14,9 +14,16 @@ export default function WaitList() {
     <div>
       <Toaster
         richColors
-        position="top-left"
+        position="bottom-right"
         expand={false}
-        style={{ zIndex: 1 }}
+        toastOptions={{
+          style: {
+            background: "rgb(0,0,0,0.5)",
+            border: "1px solid transparent",
+            boxShadow: "0 0 0 1px hsla(0, 0%, 100%, .145), 0px 2px 2px rgba(0, 0, 0, .52), 0px 8px 8px -8px rgba(0, 0, 0, 1.16)",
+            backgroundColor: "rgb(23 23 23)",
+          }
+        }}
       />
       <div className="flex flex-col gap-3">
         <div className="w-500 flex flex-col gap-1">
