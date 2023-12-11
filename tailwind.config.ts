@@ -20,8 +20,8 @@ const config: Config = {
         '500': '500px',
       },
       colors: {
-        'mk-color-dark-gray': '#A1A1A1',
-        'mk-color-light-gray': "#EDEDED",
+        'dgray': '#A1A1A1',
+        'lgray': "#EDEDED",
       },
       fontFamily: {
         'open-sans': ['Geist', 'sans-serif'],
