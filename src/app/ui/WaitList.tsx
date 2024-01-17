@@ -3,8 +3,7 @@ import { useState } from "react";
 import { Toaster, toast } from "sonner";
 
 // import type { NextApiRequest, NextApiResponse } from "next";
-// import { EmailTemplate } from "./ui/EmailTemplate/email-template";
-import sendEmail from "./SendEmail";
+import { POST } from "../api/send/route";
 
 export default function WaitList() {
   const [emailValue, setEmailValue] = useState("");
@@ -25,7 +24,7 @@ export default function WaitList() {
       return;
     }
 
-    await sendEmail(emailValue);
+    await POST(emailValue);
 
     console.log("FooBar", emailValue);
   }

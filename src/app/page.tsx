@@ -1,7 +1,5 @@
-import ConstructionLogo from "./ConstructionLogo";
-import WaitList from "./WaitList";
-
-import "./page.scss";
+import ConstructionLogo from "./ui/ConstructionLogo";
+import WaitList from "./ui/WaitList";
 
 export default function Home() {
   return (
