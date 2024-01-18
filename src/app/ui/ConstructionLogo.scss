@@ -1,29 +1,42 @@
 :root {
-  --logo-text-color: #231f20;
+  --logo-text-color-dark: #231f20;
+  --logo-text-color-light: #414141;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --logo-text-color: rgb(72, 72, 72);
+    --logo-text-color-dark: rgb(72, 72, 72);
   }
 }
 
 .cls-1 {
-  fill: #f1f2f2;
-  stroke: #231f20;
+  fill: rgb(0, 0, 0);
   stroke-miterlimit: 10;
   stroke-width: 1.42px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .cls-1 {
+    fill: #f1f2f2;
+    stroke: #f1f2f2;
+  }
+}
+
 .cls-2 {
-  fill: var(--logo-text-color);
+  fill: var(--logo-text-color-light);
   font-family: SFWillamette, 'SF Willamette';
   font-size: 170.08px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .cls-2 {
+    fill: var(--logo-text-color-dark);
+  }
+}
+
 .logo {
   position: relative;
-  border: 1px solid #1c1c1c;
+  border: 1px solid #a9a9a9;
 }
 
 @media (prefers-color-scheme: dark) {
