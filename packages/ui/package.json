@@ -1,0 +1,6 @@
+{
+  "name": "@modkimono/ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "style": "styles/theme.css"
+}

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+/* Tailwind CSS example with media query for dark mode */
+/* Light theme styles - default */
+input[type="email"] {
+  @apply bg-zinc-300 placeholder-neutral-700 text-black;
+}
+
+/* Dark theme styles */
+@media (prefers-color-scheme: dark) {
+  input[type="email"] {
+    @apply bg-neutral-900 placeholder-neutral-600 text-white;
+    /* other dark theme styles */
+  }
+}

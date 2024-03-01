@@ -6,6 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: `media`,
   theme: {
     extend: {
       backgroundImage: {
@@ -20,8 +21,11 @@ const config: Config = {
         '500': '500px',
       },
       colors: {
-        'dgray': '#A1A1A1',
         'lgray': "#EDEDED",
+        dark: {
+          text: '#A1A1A1',
+          button: '#ffffff'
+        }
       },
       fontFamily: {
         'open-sans': ['Geist', 'sans-serif'],

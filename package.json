@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@modkimono/ui": "file:packages/ui",
     "framer-motion": "^10.16.15",
     "next": "^14.0.4",
     "react": "^18",
